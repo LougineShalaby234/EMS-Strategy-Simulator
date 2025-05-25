@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Frames Master View</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    #controls {
+      background: #ececec;
+      padding: 5px;
+      flex: 0 0 auto;
+    }
+    #mainContainer {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: row;
+      height: calc(100vh - 40px);
+    }
+    #leftPane, #rightPane {
+      flex: 1 1 50%;
+      border: none;
+    }
+    button {
+      margin: 0 10px;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <button id="prevBtn">Previous</button>
+    <span id="info"></span>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <div id="mainContainer">
+    <iframe id="leftPane"></iframe>
+    <iframe id="rightPane"></iframe>
+  </div>
+
+  <script>
+    let current = 0;
+    let maxIndex = 125 - 1;
+    const leftFrame = document.getElementById('leftPane');
+    const rightFrame = document.getElementById('rightPane');
+    const infoSpan = document.getElementById('info');
+
+    function updateView() {
+      leftFrame.src = "event_" + current + ".html";
+      rightFrame.src = "all_frames.html#frame" + current;
+      infoSpan.textContent = "Frame " + current + " / " + maxIndex;
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      if (current > 0) {
+        current--;
+        updateView();
+      }
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      if (current < maxIndex) {
+        current++;
+        updateView();
+      }
+    });
+
+    updateView();
+  </script>
+</body>
+</html>
