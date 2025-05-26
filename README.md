@@ -1,16 +1,6 @@
 # Emergency Medical Services Strategy Simulator
 
-![Python](https://img.shields.io/badge/python-3.11-blue)
-
-[![Tests](https://github.com/LougineShalaby234/EmsStrategySimulator/actions/workflows/python-tests.yml/badge.svg)](https://github.com/LougineShalaby234/EmsStrategySimulator/actions/workflows/python-tests.yml) 
-
-[![codecov](https://codecov.io/gh/LougineShalaby234/EmsStrategySimulator/branch/main/graph/badge.svg)](https://codecov.io/gh/LougineShalaby234/EmsStrategySimulator)
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-![Last Commit](https://img.shields.io/github/last-commit/LougineShalaby234/EmsStrategySimulator)
-
-
+![Python](https://img.shields.io/badge/python-3.11-blue) [![Tests](https://github.com/LougineShalaby234/EmsStrategySimulator/actions/workflows/python-tests.yml/badge.svg)](https://github.com/LougineShalaby234/EmsStrategySimulator/actions/workflows/python-tests.yml)  [![codecov](https://codecov.io/gh/LougineShalaby234/EmsStrategySimulator/branch/main/graph/badge.svg)](https://codecov.io/gh/LougineShalaby234/EmsStrategySimulator) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Last Commit](https://img.shields.io/github/last-commit/LougineShalaby234/EmsStrategySimulator)
 
 
 <img src="assets/map.jpg" alt="Map" width="600"/>
