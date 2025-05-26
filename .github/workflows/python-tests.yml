@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up Conda
+      - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: AmbulanceGameEnv
@@ -17,10 +17,15 @@ jobs:
           python-version: 3.11
           auto-activate-base: false
 
-      - name: Run tests
+      - name: Run tests with coverage
         shell: bash -l {0}
         run: |
-            source $CONDA/etc/profile.d/conda.sh
-            conda activate AmbulanceGameEnv
-            pip install pytest
-            PYTHONPATH=. pytest
+          conda activate AmbulanceGameEnv
+          pip install pytest-cov codecov
+          PYTHONPATH=. pytest --cov=. --cov-report=xml
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./coverage.xml
+          fail_ci_if_error: true
