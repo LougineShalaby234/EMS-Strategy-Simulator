@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 import io
 sys.path.insert(0, os.path.abspath('..'))
 
-from AmbulanceGame.simulator import (
+from EmsStrategySimulator.simulator import (
     parse_time_str,
     read_map,
     load_scenario,

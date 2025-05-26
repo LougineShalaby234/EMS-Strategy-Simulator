@@ -2,13 +2,13 @@
 
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 
-[![Tests](https://github.com/LougineShalaby234/EMS-Strategy-Simulator/actions/workflows/python-tests.yml/badge.svg)](https://github.com/LougineShalaby234/EMS-Strategy-Simulator/actions/workflows/python-tests.yml) 
+[![Tests](https://github.com/LougineShalaby234/EmsStrategySimulator/actions/workflows/python-tests.yml/badge.svg)](https://github.com/LougineShalaby234/EmsStrategySimulator/actions/workflows/python-tests.yml) 
 
-[![codecov](https://codecov.io/gh/LougineShalaby234/EMS-Strategy-Simulator/branch/main/graph/badge.svg)](https://codecov.io/gh/LougineShalaby234/EMS-Strategy-Simulator)
+[![codecov](https://codecov.io/gh/LougineShalaby234/EmsStrategySimulator/branch/main/graph/badge.svg)](https://codecov.io/gh/LougineShalaby234/EmsStrategySimulator)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-![Last Commit](https://img.shields.io/github/last-commit/LougineShalaby234/EMS-Strategy-Simulator)
+![Last Commit](https://img.shields.io/github/last-commit/LougineShalaby234/EmsStrategySimulator)
 
 
 
@@ -24,7 +24,7 @@ This document explains how to set up and run the **EMS Strategy Simulator**, a s
 
 This notebook installs all required dependencies, clones the GitHub repository, and runs the EMS Strategy Simulator.Everything runs directly in Google Colab, with no local installation needed.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LougineShalaby234/EMS-Strategy-Simulator/blob/main/Getting_Started_with_EMS_Simulator.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LougineShalaby234/EmsStrategySimulator/blob/main/Getting_Started_with_EMS_Simulator.ipynb)
 
 ---
 
@@ -37,7 +37,7 @@ Make sure you have either [Miniconda](https://docs.conda.io/en/latest/miniconda.
 **Create and activate the conda environment** by running:
 
 ```bash
-git clone github.com/LougineShalaby234/EMS-Strategy-Simulator && cd EMS-Strategy-Simulator
+git clone github.com/LougineShalaby234/EmsStrategySimulator && cd EmsStrategySimulator
 conda env create -f environment.yml
 conda activate AmbulanceGameEnv
 ```
@@ -264,7 +264,7 @@ Below are the main parameters you can customize in `simulator.py`:
 
 
 ```
-EMS-Strategy-Simulator/
+EmsStrategySimulator/
 ├── .github/                          # GitHub-specific configuration
 │   └── workflows/                    # CI/CD automation (GitHub Actions)
 │       └── python-tests.yml         # Runs test suite on pushes and PRs
