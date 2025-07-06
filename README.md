@@ -79,9 +79,9 @@ You can run the simulator with custom arguments:
 
 ```bash
 python simulator.py \
-  --map="input/map_montgomeryPa.json" \
-  --scenario="input/calls_montgomeryPa_day1_full.json" \
-  --agent="agents/agent_random.py" \
+  --map="input/map_MontgomeryPennsylvania.json" \
+  --scenario="input/calls_MontgomeryPennsylvania_Sunday.json" \
+  --agent="agents/agent_Stochastic.py" \
   --outfolder="mylogs" \
   --num-exp=3
 ```
