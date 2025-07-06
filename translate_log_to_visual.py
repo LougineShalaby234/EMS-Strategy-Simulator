@@ -309,7 +309,7 @@ def extract_simulation_state_blocks(text):
 
 def main():
     # Process all files matching the pattern "output/calls_simple_*_run*_detailed.txt"
-    input_pattern = "output/call_*_run*_detailed.txt"
+    input_pattern = "output/calls_*_run*_detailed.txt"
     input_files = glob.glob(input_pattern)
     if not input_files:
         print("No files matching pattern found:", input_pattern)
